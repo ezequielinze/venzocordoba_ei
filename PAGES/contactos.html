@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTOS</title>
+    <link rel="stylesheet" href="../CSS/diseños.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="menu__logo">
+            <H1>VENZOCORDOBA</H1>
+        </div>
+        <nav class="menu__nav">
+            <ul class="menu__li">
+                <li class="nav__boton navegacion--inicio"><a href="../index.html">INICIO</a></li>
+                <li class="nav__boton navegacion--nosotros"><a href="./nosotros.html">NOSOTROS</a></li>
+                <li class="nav__boton navegacion--ruta"><a href="./ruta.html">RUTA</a></li>
+                <li class="nav__boton navegacion--mtb"><a href="./mtb.html">MTB</a></li>
+                <li class="nav__boton navegacion--bmx"><a href="./bmx.html">BMX</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="contactos" action="" method="post">
+            <div class="contactos__nombre colorTexto">
+                <label for="nombre">NOMBRE:</label>
+                <br>
+                <input type="text" name="nombre" size="40%"/>
+            </div>
+
+            <div class="contactos__apellido colorTexto">
+                <label for="apellido">APELLIDO:</label>
+                <br>
+                <input type="text" name="apellido" size="40%" />
+            </div>
+
+            <div class="contactos__localidad colorTexto">
+                <label for="localidad">LOCALIDAD:</label>
+                <br>
+                <input type="text" name="localidad" size="40%" />
+            </div>
+
+            <div class="contactos__email colorTexto">
+                <label for="e-mail">E-MAIL:</label>
+                <br>
+                <input type="email" name="e-mail" size="40%" />
+            </div>
+
+            <div class="contactos__consulta colorTexto">
+                <label for="text">CONSULTA:</label>
+                <br>
+                <textarea name="consulta" rows="5%" cols="42%">Escribe tu consulta: </textarea>
+            </div>
+
+            <div class="contactos__boton">
+                <button class="boton__enviar colorTexto" type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </main>    
+    <footer>
+        <div class="sociales">
+            <picture class="sociales__imagen">
+                <a href="../index.html"><img src="../IMAGENES/logo-footer.png" alt="logo" width="100" height="60"></a>
+            </picture>
+            <nav class="sociales__navegacion">
+                <a class="sociales__icono icono--instagrams" href="https://www.instagram.com/venzoarg/"> <img
+                        src="../IMAGENES/ins.png" alt="ins" width="30px"></a>
+                <a class="sociales__icono icono--facebook" href="https://www.facebook.com/venzoarg/"> <img
+                        src="../IMAGENES/face.png" alt="face" width="28px"></a>
+                <a class="sociales__icono icono--youtube" href="https://www.youtube.com/c/venzoarg"> <img
+                        src="../IMAGENES/you.png" alt="you" width="28px"></a>
+            </nav>
+        </div>
+
+    </footer>
+</body>
+
+</html>
