@@ -342,11 +342,11 @@ body{
         flex-direction: column;                
     }
     .menu__logo{           
-        font-size: 2em;    
+        font-size: 1.8em;    
     }
     .nav__boton a{         
-        font-size: 0.8em;        
-        width: 6rem;          
+        font-size: 0.6em;        
+        width: 5rem;          
      }
     /*index*/
     .videos{
