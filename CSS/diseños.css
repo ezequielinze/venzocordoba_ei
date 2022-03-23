@@ -8,10 +8,12 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     color: beige;
     font-size: 62.5%;
+    
 }
 body{
     background-color: black;
-    width: 1024;
+    max-width: 1200px;
+    
    
 }
 /* HEADER */
@@ -25,8 +27,8 @@ body{
 }
 .menu__logo{    
     margin: 2rem 1rem;   
-    color: red;
-    font-size: 3em;    
+    width: 60rem;
+        
 }
 .menu__nav{      
     margin: 1rem;      
@@ -298,7 +300,7 @@ body{
 /*responsive*/
 @media only screen and (max-width: 1024px) {
     .menu__logo{          
-        font-size: 2.5em;    
+        width: 50rem;    
     }
     .nav__boton a{       
         font-size: 0.9em;              
@@ -319,7 +321,7 @@ body{
 }
 @media only screen and (max-width: 900px) {
     .menu__logo{          
-        font-size: 2em;    
+        width: 40rem;    
     }
     .nav__boton a{        
         font-size: 0.8em;        
@@ -342,7 +344,7 @@ body{
         flex-direction: column;                
     }
     .menu__logo{           
-        font-size: 2em;    
+        width: 35rem;    
     }
     .nav__boton a{         
         font-size: 0.6em;        
@@ -442,7 +444,7 @@ body{
         margin: 1rem;              
     }
     .menu__logo{           
-        font-size: 1.8em;    
+        width: 30rem;    
     }
     .nav__boton a{         
         font-size: 0.6em;        
