@@ -13,9 +13,10 @@ html{
 body{
     background-color: black;
     max-width: 1366px;
-    
+      
    
 }
+
 /* HEADER */
 .menu{
     display: flex;
@@ -81,7 +82,8 @@ body{
     text-align: center;
     margin: 2rem;
 }
-/*main nosotros*/
+
+/*body nosotros*/
 .nosotros{    
     margin: 2rem;
 }
@@ -494,6 +496,15 @@ body{
     .sociales__icono img{
         width: 2rem;
     }
+
+}
+/*bootstrap*/ 
+body{
+    --bs-body-color: white;
+}
+.card{
+    background-color:black;
+    border:2px solid red;
 }
 
 
