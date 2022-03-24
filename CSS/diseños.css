@@ -12,7 +12,7 @@ html{
 }
 body{
     background-color: black;
-    max-width: 1200px;
+    max-width: 1366px;
     
    
 }
@@ -28,8 +28,19 @@ body{
 .menu__logo{    
     margin: 2rem 1rem;   
     width: 60rem;
-        
+    /*animacion*/ 
+    animation-duration: 5s;
+    animation-name: logo;
+    animation-iteration-count: infinite;     
 }
+@keyframes logo{
+    50%{
+       transform: scale(0.1, 1);
+       
+    }
+       
+}
+
 .menu__nav{      
     margin: 1rem;      
 }
@@ -52,7 +63,15 @@ body{
    /*mismo tamaño de caja*/
    display: inline-block;
    width: 8rem;
-   text-align: center;   
+   text-align: center;
+   transition: width 1s; 
+   
+}
+/*agrandar el boton*/
+.nav__boton a:hover{
+     width: 15rem;
+     background-color: rgb(185, 184, 184); 
+         
 }
 
 /*main index*/
