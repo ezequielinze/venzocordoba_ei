@@ -1,0 +1,10 @@
+.sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+    align-items: center;
+    &__icono{
+    margin: 1rem;
+    }
+}

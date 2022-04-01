@@ -1,0 +1,184 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*fondo de pantalla*/
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
+  font-size: 62.5%; }
+  html body {
+    background-color: black;
+    max-width: 1200px; }
+
+/* HEADER */
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*menu al medio*/
+  align-items: center;
+  margin: 2rem; }
+  .menu__logo {
+    margin: 2rem 1rem;
+    width: 60rem; }
+  .menu__nav {
+    margin: 1rem; }
+  .menu__li {
+    /*botones en fila*/
+    display: flex;
+    list-style: none; }
+  .menu .nav__boton a {
+    text-decoration: none;
+    font-size: 1em;
+    color: red;
+    background-color: darkgray;
+    /*espacio a los botones*/
+    margin: 0px 0.4rem;
+    /*tamaño de caja*/
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    /*mismo tamaño de caja*/
+    display: inline-block;
+    width: 8rem;
+    text-align: center; }
+
+.sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+  align-items: center; }
+  .sociales__icono {
+    margin: 1rem; }
+
+.nosotros {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "a e b b f d" "a c c c c d"; }
+  .nosotros__titulo {
+    color: red;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    grid-area: b;
+    align-items: center; }
+  .nosotros__parrafo {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2em;
+    grid-area: c; }
+
+@media only screen and (max-width: 1024px) {
+  .menu__logo {
+    width: 50rem; }
+  .menu .nav__boton a {
+    font-size: 0.9em;
+    width: 7rem;
+    text-align: center; }
+  .nosotros__titulo {
+    font-size: 2em; }
+    .nosotros__titulo__parrafo {
+      font-size: 1.5em; }
+  .centrarTexto {
+    font-size: 1.6em; } }
+
+@media only screen and (max-width: 900px) {
+  .menu__logo {
+    width: 40rem; }
+  .menu .nav__boton a {
+    font-size: 0.8em;
+    width: 6rem; }
+  .nosotros__titulo {
+    font-size: 1.8em; }
+    .nosotros__titulo__parrafo {
+      font-size: 1.2em; }
+  .sociales__imagen a img {
+    width: 8rem; } }
+
+@media only screen and (max-width: 780px) {
+  .menu {
+    display: flex;
+    flex-direction: column; }
+    .menu__logo {
+      width: 35rem; }
+    .menu .nav__boton a {
+      font-size: 0.6em;
+      width: 6rem; }
+  /*index*/
+  .videos {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 3fr 3fr 0.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: "v1"  "v2"  "ti" "v3" "v4" "v5";
+    grid-gap: 1rem;
+    margin: 2rem; }
+  .tituloIndex {
+    font-size: 1.8em; }
+  /*nosotros*/
+  .nosotros__titulo {
+    font-size: 1.6em; }
+  .nosotros__parrafo {
+    font-size: 1em; }
+  /*ruta*/
+  .ruta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
+    grid-template-areas: "rtp" "rip"  "rpp" "rte" "rie" "rpe"; }
+  /*mtb*/
+  .mtb {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
+    grid-template-areas: "mtx" "mix" "mpx" "mte" "mie" "mpe"; }
+  /*bmx*/
+  .bmx {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
+    grid-template-areas: "btc" "bic" "bpc" "btf" "bif"  "bpf"; }
+  /*contacto*/
+  .contactos {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 5fr 2fr;
+    grid-template-areas: "cn" "ca" "cl" "ce"                                                              "cc"  "cb"; }
+  .sociales__imagen a img {
+    width: 7rem; }
+    .sociales__imagen a img__icono img {
+      width: 2.5rem; } }
+
+@media only screen and (max-width: 420px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem; }
+    .menu__logo {
+      width: 30rem; }
+    .menu .nav__boton a {
+      font-size: 0.6em;
+      width: 5rem;
+      text-align: center; }
+  .tituloIndex {
+    font-size: 1.6em; }
+  .nosotros__titulo {
+    font-size: 1.4em; }
+  .nosotros__parrafo {
+    font-size: 0.8em; }
+  .centrarTexto {
+    font-size: 1.4em; }
+  .contactos {
+    margin: 1rem; }
+  .sociales {
+    margin: 1rem; }
+    .sociales__imagen a img {
+      width: 6rem; }
+    .sociales__icono img {
+      width: 2rem; } }

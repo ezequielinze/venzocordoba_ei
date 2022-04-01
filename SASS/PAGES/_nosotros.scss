@@ -1,0 +1,28 @@
+.nosotros{    
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr ;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: "a e b b f d"
+                            "a c c c c d";
+        
+        &__titulo{
+        color: red;
+        font-size: 2.5em;
+        font-weight:bold;
+        text-align: center;
+        display: grid;
+        grid-area: b; 
+        align-items: center;
+        }
+        &__parrafo{
+        text-align: center;
+        margin: 1rem;
+        font-size: 2em;
+        grid-area: c; 
+        }
+}   
+
+        
+
+ 

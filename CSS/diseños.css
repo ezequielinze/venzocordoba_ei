@@ -1,3 +1,4 @@
+/*listo*/
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +17,7 @@ body{
     
    
 }
+/*listo*/
 /* HEADER */
 .menu{
     display: flex;
@@ -62,6 +64,7 @@ body{
     text-align: center;
     margin: 2rem;
 }
+/*listo*/
 /*main nosotros*/
 .nosotros{    
     margin: 2rem;
@@ -125,7 +128,7 @@ body{
     grid-area: v5;
     
 }
-
+/*listo*/
 /*grid main nosotros*/
 .nosotros{
     display: grid;
@@ -284,7 +287,7 @@ body{
     
 }
 
-
+/*listo*/
 /*footer flex*/
 
 .sociales{

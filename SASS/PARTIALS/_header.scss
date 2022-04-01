@@ -1,0 +1,37 @@
+/* HEADER */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    /*menu al medio*/
+    align-items: center;
+    margin: 2rem; 
+    &__logo{    
+    margin: 2rem 1rem;   
+    width: 60rem;    
+    }
+    &__nav{      
+    margin: 1rem;
+    } 
+    &__li{  
+    /*botones en fila*/
+    display: flex;  
+    list-style: none;
+    }
+    .nav__boton a{
+    text-decoration: none; 
+    font-size: 1em;
+    color: red;
+    background-color: darkgray;
+    /*espacio a los botones*/
+    margin: 0px 0.4rem;
+    /*tamaño de caja*/
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    /*mismo tamaño de caja*/
+    display: inline-block;
+    width: 8rem;
+    text-align: center; 
+    }                    
+}
