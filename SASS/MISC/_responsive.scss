@@ -8,20 +8,16 @@
         width: 7rem;
         text-align: center;   
         }    
-    }
-    
+    }    
     .nosotros__titulo{
         font-size: 2em;
-        &__parrafo{
-        font-size: 1.5em;
         }
-    }
-    
+    .nosotros__parrafo{
+        font-size: 1.5em;
+        }        
     .centrarTexto{
         font-size: 1.6em;
-    }
-    
-    
+    }   
 }
 @media only screen and (max-width: 900px) {
     .menu{
@@ -35,14 +31,15 @@
     }
     .nosotros__titulo{
         font-size: 1.8em;
-        &__parrafo{
-        font-size: 1.2em;
-        }
     }
-    
+    .nosotros__parrafo{
+        font-size: 1.2em;
+    }
+    .tituloIndex{
+        font-size: 1.9em;
+    }          
     .sociales__imagen a img{
-        width: 8rem; 
-      
+        width: 8rem;       
     }
 }
 @media only screen and (max-width: 780px) {
@@ -56,11 +53,8 @@
         font-size: 0.6em;        
         width: 6rem;          
         }              
-    }
-    
-    
-    /*index*/
-    .videos{
+    }  
+    .video{
         display: grid;
         grid-template-columns: 2fr;
         grid-template-rows: 3fr 3fr 0.5fr 1.5fr 1.5fr 1.5fr;
@@ -71,22 +65,17 @@
                               "v4"
                               "v5";
         grid-gap: 1rem;
-        margin: 2rem;
-                           
-    }
-    .tituloIndex{
-        font-size: 1.8em;
-    }
-    
-    /*nosotros*/
+        margin: 2rem; 
+        .tituloIndex{
+        font-size: 1.8em; 
+        }                         
+    }  
     .nosotros__titulo{
         font-size: 1.6em;        
     }
     .nosotros__parrafo{
         font-size: 1em;
     }
-    
-    /*ruta*/
     .ruta{
         display: grid;
         grid-template-columns: 1fr;
@@ -98,8 +87,6 @@
                              "rie"
                              "rpe";
     }
-    
-    /*mtb*/
     .mtb{
         display: grid;
         grid-template-columns: 1fr;
@@ -111,8 +98,6 @@
                              "mie"
                              "mpe";
     }
-    
-    /*bmx*/
     .bmx{
         display: grid;
         grid-template-columns: 1fr;
@@ -124,9 +109,6 @@
                              "bif" 
                              "bpf";
     }
-   
-    
-    /*contacto*/
     .contactos{
         display: grid;
         grid-template-columns: 2fr;
@@ -161,18 +143,15 @@
         text-align: center;   
         }            
     }
-    
-    
     .tituloIndex{
-        font-size: 1.6em;
+        font-size: 1.7em;
     }   
     .nosotros__titulo{
         font-size: 1.4em;        
     }
     .nosotros__parrafo{
         font-size: 0.8em;
-        }
-       
+        }       
     .centrarTexto{
         font-size: 1.4em;
     } 
@@ -187,7 +166,5 @@
         &__icono img{
         width: 2rem;
         }    
-    }
-    
-    
+    }   
 }

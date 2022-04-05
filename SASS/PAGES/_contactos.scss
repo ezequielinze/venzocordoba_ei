@@ -1,0 +1,46 @@
+.contactos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr 4fr 10fr 4fr;
+    grid-template-areas: "z cn ca k"
+                         "z cl ce k"                                                             
+                         "z cc cc k" 
+                         "z cb cb k"                      
+                         ;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem;
+    margin: 2rem;
+    
+    &__nombre{
+    grid-area: cn;
+    }
+    &__apellido{
+        grid-area: ca;
+    }
+    &__localidad{
+        grid-area: cl;
+    }
+    &__email{
+        grid-area: ce;
+    }
+    &__consulta{
+        grid-area: cc; 
+    }
+    &__boton{
+        grid-area: cb;        
+    }
+    .boton__enviar{
+    font-size: 1em;
+    font-weight:bold;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: darkgray;    
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+.ruta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 10fr 2fr 10fr;
+    grid-template-areas: "rtp rtp"
+                         "rip rpp"
+                         "rte rte"
+                         "rie rpe";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 0.2rem;
+    margin: 2rem;
+    .rutaTitulo__pho{
+    grid-area: rtp;
+    }
+    .rutaImg__pho{
+        grid-area: rip;
+    }
+    .rutaParrafo__pho{
+        grid-area: rpp;
+    }
+    .rutaTitulo__et{
+        grid-area: rte;
+    }
+    .rutaImg__et{
+        grid-area: rie;
+    }
+    .rutaParrafo__et{
+        grid-area: rpe;
+    }
+}

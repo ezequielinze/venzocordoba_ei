@@ -1,0 +1,32 @@
+.bmx{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 10fr 2fr 10fr;
+    grid-template-areas: "btc btc"
+                         "bic bpc"
+                         "btf btf"
+                         "bif bpf";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 0.2rem;
+    margin: 2rem;
+    .bmxTitulo__cu{
+    grid-area: btc;        
+    }
+    .bmxImg__cu{
+    grid-area: bic;    
+    }
+    .bmxParrafo__cu{
+    grid-area: bpc;    
+    }
+    .bmxTitulo__fl{
+    grid-area: btf;
+    }
+    .bmxImg__fl{
+    grid-area: bif;    
+    }
+    .bmxParrafo__fl{
+    grid-area: bpf;    
+    }
+}
+

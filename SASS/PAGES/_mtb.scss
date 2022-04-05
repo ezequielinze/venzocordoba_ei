@@ -1,0 +1,31 @@
+.mtb{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 10fr 2fr 10fr;
+    grid-template-areas: "mtx mtx"
+                         "mix mpx"
+                         "mte mte"
+                         "mie mpe";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 0.2rem;
+    margin: 2rem;
+    .mtbTitulo__xb{
+    grid-area: mtx;
+    }
+    .mtbImg__xb{
+        grid-area: mix;
+    }
+    .mtbParrafo__xb{
+        grid-area: mpx;
+    }
+    .mtbTitulo__ex{
+        grid-area: mte;
+    }
+    .mtbImg__ex{
+        grid-area: mie;
+    }
+    .mtbParrafo__ex{
+        grid-area: mpe;
+    }
+}
