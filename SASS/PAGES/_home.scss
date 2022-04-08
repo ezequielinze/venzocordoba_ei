@@ -15,10 +15,7 @@
     row-gap: 5rem;
     }
     .tituloIndex{
-        color: red;
-        font-size: 2em;
-        text-align: center;
-        margin: 2rem;
+        @extend .tituloGeneral;
         grid-area: ti;    
     }
     .subvideo__venzo1{

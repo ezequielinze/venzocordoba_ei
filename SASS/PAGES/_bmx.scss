@@ -6,10 +6,8 @@
                          "bic bpc"
                          "btf btf"
                          "bif bpf";
-    justify-items: center;
-    align-items: center;
     grid-gap: 0.2rem;
-    margin: 2rem;
+    @include nor_grid(center, center, 2rem); 
     .bmxTitulo__cu{
     grid-area: btc;        
     }

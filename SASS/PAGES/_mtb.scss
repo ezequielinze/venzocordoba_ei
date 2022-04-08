@@ -6,10 +6,8 @@
                          "mix mpx"
                          "mte mte"
                          "mie mpe";
-    justify-items: center;
-    align-items: center;
     grid-gap: 0.2rem;
-    margin: 2rem;
+    @include nor_grid(center, center, 2rem); 
     .mtbTitulo__xb{
     grid-area: mtx;
     }

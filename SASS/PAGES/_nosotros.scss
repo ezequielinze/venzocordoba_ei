@@ -7,10 +7,7 @@
                             "a c c c c d";
         
         &__titulo{
-        color: red;
-        font-size: 2.5em;
-        font-weight:bold;
-        text-align: center;
+        @extend .tituloGeneral;
         display: grid;
         grid-area: b; 
         align-items: center;

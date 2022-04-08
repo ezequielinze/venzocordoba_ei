@@ -15,11 +15,31 @@ html {
   html .centrarTexto {
     text-align: center;
     font-size: 1.8em; }
-  html .colorTexto {
-    color: red; }
   html .centrarImg {
     align-items: center; }
 
+/*maps*/
+.color_b {
+  color: blue; }
+
+.color_r {
+  color: red; }
+
+.color_g {
+  color: green; }
+
+.color_y {
+  color: yellow; }
+
+/*extend*/
+.tituloGeneral, .video .tituloIndex, .nosotros__titulo {
+  color: red;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem; }
+
+/*mixin*/
 /* HEADER */
 .menu {
   display: flex;
@@ -75,10 +95,6 @@ html {
     grid-area: v2;
     row-gap: 5rem; }
   .video .tituloIndex {
-    color: red;
-    font-size: 2em;
-    text-align: center;
-    margin: 2rem;
     grid-area: ti; }
   .video .subvideo__venzo1 {
     grid-area: v3; }
@@ -94,10 +110,6 @@ html {
   grid-template-rows: 1fr 3fr;
   grid-template-areas: "a e b b f d" "a c c c c d"; }
   .nosotros__titulo {
-    color: red;
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: center;
     display: grid;
     grid-area: b;
     align-items: center; }
@@ -112,9 +124,9 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 10fr 2fr 10fr;
   grid-template-areas: "rtp rtp" "rip rpp" "rte rte" "rie rpe";
+  grid-gap: 0.2rem;
   justify-items: center;
   align-items: center;
-  grid-gap: 0.2rem;
   margin: 2rem; }
   .ruta .rutaTitulo__pho {
     grid-area: rtp; }
@@ -134,9 +146,9 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 10fr 2fr 10fr;
   grid-template-areas: "mtx mtx" "mix mpx" "mte mte" "mie mpe";
+  grid-gap: 0.2rem;
   justify-items: center;
   align-items: center;
-  grid-gap: 0.2rem;
   margin: 2rem; }
   .mtb .mtbTitulo__xb {
     grid-area: mtx; }
@@ -156,9 +168,9 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 10fr 2fr 10fr;
   grid-template-areas: "btc btc" "bic bpc" "btf btf" "bif bpf";
+  grid-gap: 0.2rem;
   justify-items: center;
   align-items: center;
-  grid-gap: 0.2rem;
   margin: 2rem; }
   .bmx .bmxTitulo__cu {
     grid-area: btc; }
@@ -178,9 +190,9 @@ html {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 4fr 4fr 10fr 4fr;
   grid-template-areas: "z cn ca k" "z cl ce k"                                                              "z cc cc k"  "z cb cb k";
+  grid-gap: 1rem;
   justify-items: center;
   align-items: center;
-  grid-gap: 1rem;
   margin: 2rem; }
   .contactos__nombre {
     grid-area: cn; }

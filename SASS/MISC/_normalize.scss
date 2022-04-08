@@ -17,13 +17,31 @@ html{
         text-align: center;
         font-size: 1.8em;
     }
-    .colorTexto{
-        color: red;
-    }
     .centrarImg{
         align-items: center;
     }        
 }
+/*maps*/
+$colores:(
+    b:blue,
+    r:red,
+    g:green,
+    y:yellow,
+);
+@each $var, $val in $colores {
+    .color_#{$var}{
+    color: $val};
+}
+/*extend*/
+.tituloGeneral{
+    color:red;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem;
+}
+
+
 
     
    

@@ -7,10 +7,8 @@
                          "z cc cc k" 
                          "z cb cb k"                      
                          ;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 1rem;
-    margin: 2rem;
+    grid-gap: 1rem; 
+    @include nor_grid(center, center, 2rem); 
     
     &__nombre{
     grid-area: cn;

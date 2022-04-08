@@ -1,0 +1,7 @@
+/*mixin*/
+@mixin nor_grid($justify, $align, $margin) {
+    justify-items: $justify;
+    align-items: $align;
+    margin: $margin;
+}
+
