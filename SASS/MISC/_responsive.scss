@@ -9,14 +9,14 @@
         text-align: center;   
         }    
     }    
-    .nosotros__titulo{
+    .tituloGeneral{
         font-size: 2em;
         }
     .nosotros__parrafo{
-        font-size: 1.5em;
+        font-size: 1.6em;
         }        
     .centrarTexto{
-        font-size: 1.6em;
+        font-size: 3em;
     }   
 }
 @media only screen and (max-width: 900px) {
@@ -29,15 +29,15 @@
             width: 6rem;          
         }
     }
-    .nosotros__titulo{
+    .tituloGeneral{
         font-size: 1.8em;
     }
     .nosotros__parrafo{
         font-size: 1.2em;
     }
-    .tituloIndex{
-        font-size: 1.9em;
-    }          
+    .centrarTexto{
+        font-size: 1.2em;
+    }         
     .sociales__imagen a img{
         width: 8rem;       
     }
@@ -66,14 +66,15 @@
                               "v5";
         grid-gap: 1rem;
         margin: 2rem; 
-        .tituloIndex{
-        font-size: 1.8em; 
-        }                         
+                                
     }  
-    .nosotros__titulo{
+    .tituloGeneral{
         font-size: 1.6em;        
     }
     .nosotros__parrafo{
+        font-size: 1em;
+    }
+    .centrarTexto{
         font-size: 1em;
     }
     .ruta{
@@ -143,17 +144,15 @@
         text-align: center;   
         }            
     }
-    .tituloIndex{
-        font-size: 1.7em;
+    .tituloGeneral{
+        font-size: 1.4em;
     }   
-    .nosotros__titulo{
-        font-size: 1.4em;        
-    }
+    
     .nosotros__parrafo{
         font-size: 0.8em;
         }       
     .centrarTexto{
-        font-size: 1.4em;
+        font-size: 0.8em;
     } 
     .contactos{
         margin: 1rem;

@@ -9,7 +9,8 @@
     grid-gap: 0.2rem;
     @include nor_grid(center, center, 2rem); 
     .bmxTitulo__cu{
-    grid-area: btc;        
+    grid-area: btc; 
+    @extend .tituloGeneral;       
     }
     .bmxImg__cu{
     grid-area: bic;    
@@ -19,6 +20,7 @@
     }
     .bmxTitulo__fl{
     grid-area: btf;
+    @extend .tituloGeneral;
     }
     .bmxImg__fl{
     grid-area: bif;    

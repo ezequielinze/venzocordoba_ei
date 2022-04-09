@@ -10,6 +10,7 @@
     @include nor_grid(center, center, 2rem); 
     .rutaTitulo__pho{
     grid-area: rtp;
+    @extend .tituloGeneral;
     }
     .rutaImg__pho{
         grid-area: rip;
@@ -19,6 +20,7 @@
     }
     .rutaTitulo__et{
         grid-area: rte;
+        @extend .tituloGeneral;
     }
     .rutaImg__et{
         grid-area: rie;

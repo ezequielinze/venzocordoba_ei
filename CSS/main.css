@@ -32,7 +32,7 @@ html {
   color: yellow; }
 
 /*extend*/
-.tituloGeneral, .video .tituloIndex, .nosotros__titulo {
+.tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
   color: red;
   font-size: 2.5em;
   font-weight: bold;
@@ -220,12 +220,12 @@ html {
     font-size: 0.9em;
     width: 7rem;
     text-align: center; }
-  .nosotros__titulo {
+  .tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
     font-size: 2em; }
   .nosotros__parrafo {
-    font-size: 1.5em; }
+    font-size: 1.6em; }
   .centrarTexto {
-    font-size: 1.6em; } }
+    font-size: 3em; } }
 
 @media only screen and (max-width: 900px) {
   .menu__logo {
@@ -233,12 +233,12 @@ html {
   .menu .nav__boton a {
     font-size: 0.8em;
     width: 6rem; }
-  .nosotros__titulo {
+  .tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
     font-size: 1.8em; }
   .nosotros__parrafo {
     font-size: 1.2em; }
-  .tituloIndex {
-    font-size: 1.9em; }
+  .centrarTexto {
+    font-size: 1.2em; }
   .sociales__imagen a img {
     width: 8rem; } }
 
@@ -258,11 +258,11 @@ html {
     grid-template-areas: "v1"  "v2"  "ti" "v3" "v4" "v5";
     grid-gap: 1rem;
     margin: 2rem; }
-    .video .tituloIndex {
-      font-size: 1.8em; }
-  .nosotros__titulo {
+  .tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
     font-size: 1.6em; }
   .nosotros__parrafo {
+    font-size: 1em; }
+  .centrarTexto {
     font-size: 1em; }
   .ruta {
     display: grid;
@@ -300,14 +300,12 @@ html {
       font-size: 0.6em;
       width: 5rem;
       text-align: center; }
-  .tituloIndex {
-    font-size: 1.7em; }
-  .nosotros__titulo {
+  .tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
     font-size: 1.4em; }
   .nosotros__parrafo {
     font-size: 0.8em; }
   .centrarTexto {
-    font-size: 1.4em; }
+    font-size: 0.8em; }
   .contactos {
     margin: 1rem; }
   .sociales {

@@ -9,7 +9,8 @@
     grid-gap: 0.2rem;
     @include nor_grid(center, center, 2rem); 
     .mtbTitulo__xb{
-    grid-area: mtx;
+        @extend .tituloGeneral;
+        grid-area: mtx;
     }
     .mtbImg__xb{
         grid-area: mix;
@@ -19,6 +20,7 @@
     }
     .mtbTitulo__ex{
         grid-area: mte;
+        @extend .tituloGeneral;
     }
     .mtbImg__ex{
         grid-area: mie;
