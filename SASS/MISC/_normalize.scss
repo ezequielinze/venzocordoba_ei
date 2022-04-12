@@ -12,15 +12,22 @@ html{
         background-color: black;
         max-width: 1200px;
         
-        }
+        } 
+        
     .centrarTexto{
         text-align: center;
         font-size: 1.8em;
     }
     .centrarImg{
         align-items: center;
-    }        
+    } 
+      
+    
 }
+
+
+
+
 /*maps*/
 $colores:(
     b:blue,
@@ -40,6 +47,7 @@ $colores:(
     text-align: center;
     margin: 2rem;
 }
+
 
 
 

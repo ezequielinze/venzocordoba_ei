@@ -86,7 +86,9 @@ html {
   display: grid;
   grid-template-columns: repeat(6, 2fr);
   grid-template-rows: 6fr 1fr 3fr;
-  grid-template-areas: "v1 v1 v1 v2 v2 v2" "ti ti ti ti ti ti" "v3 v3 v4 v4 v5 v5";
+  grid-template-areas: "v1 v1 v1 v2 v2 v2"
+ "ti ti ti ti ti ti"
+ "v3 v3 v4 v4 v5 v5";
   grid-gap: 1rem;
   margin: 2rem; }
   .video__venzo1 {
@@ -108,7 +110,8 @@ html {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
   grid-template-rows: 1fr 3fr;
-  grid-template-areas: "a e b b f d" "a c c c c d"; }
+  grid-template-areas: "a e b b f d"
+ "a c c c c d"; }
   .nosotros__titulo {
     display: grid;
     grid-area: b;
@@ -123,7 +126,10 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 10fr 2fr 10fr;
-  grid-template-areas: "rtp rtp" "rip rpp" "rte rte" "rie rpe";
+  grid-template-areas: "rtp rtp"
+ "rip rpp"
+ "rte rte"
+ "rie rpe";
   grid-gap: 0.2rem;
   justify-items: center;
   align-items: center;
@@ -145,7 +151,10 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 10fr 2fr 10fr;
-  grid-template-areas: "mtx mtx" "mix mpx" "mte mte" "mie mpe";
+  grid-template-areas: "mtx mtx"
+ "mix mpx"
+ "mte mte"
+ "mie mpe";
   grid-gap: 0.2rem;
   justify-items: center;
   align-items: center;
@@ -167,7 +176,10 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 10fr 2fr 10fr;
-  grid-template-areas: "btc btc" "bic bpc" "btf btf" "bif bpf";
+  grid-template-areas: "btc btc"
+ "bic bpc"
+ "btf btf"
+ "bif bpf";
   grid-gap: 0.2rem;
   justify-items: center;
   align-items: center;
@@ -189,7 +201,10 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 4fr 4fr 10fr 4fr;
-  grid-template-areas: "z cn ca k" "z cl ce k"                                                              "z cc cc k"  "z cb cb k";
+  grid-template-areas: "z cn ca k"
+ "z cl ce k"                                                             
+ "z cc cc k" 
+ "z cb cb k";
   grid-gap: 1rem;
   justify-items: center;
   align-items: center;
@@ -255,7 +270,12 @@ html {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 3fr 3fr 0.5fr 1.5fr 1.5fr 1.5fr;
-    grid-template-areas: "v1"  "v2"  "ti" "v3" "v4" "v5";
+    grid-template-areas: "v1" 
+ "v2" 
+ "ti"
+ "v3"
+ "v4"
+ "v5";
     grid-gap: 1rem;
     margin: 2rem; }
   .tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
@@ -268,22 +288,42 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
-    grid-template-areas: "rtp" "rip"  "rpp" "rte" "rie" "rpe"; }
+    grid-template-areas: "rtp"
+ "rip" 
+ "rpp"
+ "rte"
+ "rie"
+ "rpe"; }
   .mtb {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
-    grid-template-areas: "mtx" "mix" "mpx" "mte" "mie" "mpe"; }
+    grid-template-areas: "mtx"
+ "mix"
+ "mpx"
+ "mte"
+ "mie"
+ "mpe"; }
   .bmx {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
-    grid-template-areas: "btc" "bic" "bpc" "btf" "bif"  "bpf"; }
+    grid-template-areas: "btc"
+ "bic"
+ "bpc"
+ "btf"
+ "bif" 
+ "bpf"; }
   .contactos {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 2fr 2fr 2fr 2fr 5fr 2fr;
-    grid-template-areas: "cn" "ca" "cl" "ce"                                                              "cc"  "cb"; }
+    grid-template-areas: "cn"
+ "ca"
+ "cl"
+ "ce"                                                             
+ "cc" 
+ "cb"; }
   .sociales__imagen a img {
     width: 7rem; }
     .sociales__imagen a img__icono img {
@@ -314,3 +354,5 @@ html {
       width: 6rem; }
     .sociales__icono img {
       width: 2rem; } }
+    
+    
