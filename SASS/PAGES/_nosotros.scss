@@ -10,11 +10,13 @@
         
         &__titulo{
         @extend .tituloGeneral;
+        
         display: grid;
         grid-area: b; 
         align-items: center;
         }
         &__parrafo{
+        font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         margin: 1rem;
         font-size: 2em;

@@ -10,13 +10,14 @@ html {
   color: beige;
   font-size: 62.5%; }
   html body {
-    background-color: black;
-    max-width: 1200px; }
-  html .centrarTexto {
-    text-align: center;
-    font-size: 1.8em; }
+    background-color: black; }
   html .centrarImg {
     align-items: center; }
+  html .centrarBody {
+    max-width: 1300px;
+    margin: 0 auto; }
+  html .imgResponsive {
+    width: 100%; }
 
 /*maps*/
 .color_b {
@@ -32,12 +33,19 @@ html {
   color: yellow; }
 
 /*extend*/
-.tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
+.tituloGeneral, h1, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
   color: red;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
   margin: 2rem; }
+
+.centrarTexto, .bmx .bmxParrafo__cu {
+  text-align: center;
+  font-size: 2em; }
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif; }
 
 /*mixin*/
 /* HEADER */
@@ -71,7 +79,13 @@ html {
     /*mismo tamaño de caja*/
     display: inline-block;
     width: 8rem;
-    text-align: center; }
+    text-align: center;
+    transition: width 1s; }
+
+.nav__boton a:hover {
+  width: 12rem;
+  background-color: #c2bfbf;
+  font-weight: bold; }
 
 .sociales {
   display: flex;
@@ -85,12 +99,10 @@ html {
 .video {
   display: grid;
   grid-template-columns: repeat(6, 2fr);
-  grid-template-rows: 6fr 1fr 3fr;
-  grid-template-areas: "v1 v1 v1 v2 v2 v2"
- "ti ti ti ti ti ti"
- "v3 v3 v4 v4 v5 v5";
+  grid-template-rows: 3fr 1fr 2fr;
+  grid-template-areas: "v1 v1 v1 v2 v2 v2" "ti ti ti ti ti ti" "v3 v3 v4 v4 v5 v5";
   grid-gap: 1rem;
-  margin: 2rem; }
+  padding: 2rem; }
   .video__venzo1 {
     grid-area: v1; }
   .video__venzo2 {
@@ -110,26 +122,24 @@ html {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
   grid-template-rows: 1fr 3fr;
-  grid-template-areas: "a e b b f d"
- "a c c c c d"; }
+  grid-template-areas: "a e b b f d" "a c c c c d"; }
   .nosotros__titulo {
     display: grid;
     grid-area: b;
     align-items: center; }
   .nosotros__parrafo {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 1rem;
     font-size: 2em;
-    grid-area: c; }
+    grid-area: c;
+    color: white; }
 
 .ruta {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 10fr 2fr 10fr;
-  grid-template-areas: "rtp rtp"
- "rip rpp"
- "rte rte"
- "rie rpe";
+  grid-template-areas: "rtp rtp" "rip rpp" "rte rte" "rie rpe";
   grid-gap: 0.2rem;
   justify-items: center;
   align-items: center;
@@ -151,10 +161,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 10fr 2fr 10fr;
-  grid-template-areas: "mtx mtx"
- "mix mpx"
- "mte mte"
- "mie mpe";
+  grid-template-areas: "mtx mtx" "mix mpx" "mte mte" "mie mpe";
   grid-gap: 0.2rem;
   justify-items: center;
   align-items: center;
@@ -176,10 +183,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 10fr 2fr 10fr;
-  grid-template-areas: "btc btc"
- "bic bpc"
- "btf btf"
- "bif bpf";
+  grid-template-areas: "btc btc" "bic bpc" "btf btf" "bif bpf";
   grid-gap: 0.2rem;
   justify-items: center;
   align-items: center;
@@ -201,10 +205,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 4fr 4fr 10fr 4fr;
-  grid-template-areas: "z cn ca k"
- "z cl ce k"                                                             
- "z cc cc k" 
- "z cb cb k";
+  grid-template-areas: "z cn ca k" "z cl ce k"                                                              "z cc cc k"  "z cb cb k";
   grid-gap: 1rem;
   justify-items: center;
   align-items: center;
@@ -235,12 +236,12 @@ html {
     font-size: 0.9em;
     width: 7rem;
     text-align: center; }
-  .tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
+  .tituloGeneral, h1, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
     font-size: 2em; }
   .nosotros__parrafo {
     font-size: 1.6em; }
-  .centrarTexto {
-    font-size: 3em; } }
+  .centrarTexto, .bmx .bmxParrafo__cu {
+    font-size: 1.5em; } }
 
 @media only screen and (max-width: 900px) {
   .menu__logo {
@@ -248,12 +249,12 @@ html {
   .menu .nav__boton a {
     font-size: 0.8em;
     width: 6rem; }
-  .tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
+  .tituloGeneral, h1, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
     font-size: 1.8em; }
   .nosotros__parrafo {
     font-size: 1.2em; }
-  .centrarTexto {
-    font-size: 1.2em; }
+  .centrarTexto, .bmx .bmxParrafo__cu {
+    font-size: 1.3em; }
   .sociales__imagen a img {
     width: 8rem; } }
 
@@ -270,60 +271,37 @@ html {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 3fr 3fr 0.5fr 1.5fr 1.5fr 1.5fr;
-    grid-template-areas: "v1" 
- "v2" 
- "ti"
- "v3"
- "v4"
- "v5";
+    grid-template-areas: "v1"  "v2"  "ti" "v3" "v4" "v5";
     grid-gap: 1rem;
     margin: 2rem; }
-  .tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
-    font-size: 1.6em; }
   .nosotros__parrafo {
-    font-size: 1em; }
-  .centrarTexto {
     font-size: 1em; }
   .ruta {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
-    grid-template-areas: "rtp"
- "rip" 
- "rpp"
- "rte"
- "rie"
- "rpe"; }
+    grid-template-rows: 1fr 2fr 2fr 1fr 2fr 2fr;
+    grid-template-areas: "rtp" "rip"  "rpp" "rte" "rie" "rpe"; }
+    .ruta .imgResponsive {
+      width: 80%; }
   .mtb {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
-    grid-template-areas: "mtx"
- "mix"
- "mpx"
- "mte"
- "mie"
- "mpe"; }
+    grid-template-rows: 1fr 2fr 2fr 1fr 2fr 2fr;
+    grid-template-areas: "mtx" "mix" "mpx" "mte" "mie" "mpe"; }
+    .mtb .imgResponsive {
+      width: 80%; }
   .bmx {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
-    grid-template-areas: "btc"
- "bic"
- "bpc"
- "btf"
- "bif" 
- "bpf"; }
+    grid-template-rows: 1fr 2fr 2fr 1fr 2fr 2fr;
+    grid-template-areas: "btc" "bic" "bpc" "btf" "bif"  "bpf"; }
+    .bmx .imgResponsive {
+      width: 80%; }
   .contactos {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 2fr 2fr 2fr 2fr 5fr 2fr;
-    grid-template-areas: "cn"
- "ca"
- "cl"
- "ce"                                                             
- "cc" 
- "cb"; }
+    grid-template-areas: "cn" "ca" "cl" "ce"                                                              "cc"  "cb"; }
   .sociales__imagen a img {
     width: 7rem; }
     .sociales__imagen a img__icono img {
@@ -340,12 +318,12 @@ html {
       font-size: 0.6em;
       width: 5rem;
       text-align: center; }
-  .tituloGeneral, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
-    font-size: 1.4em; }
+  .tituloGeneral, h1, .video .tituloIndex, .nosotros__titulo, .ruta .rutaTitulo__pho, .ruta .rutaTitulo__et, .mtb .mtbTitulo__xb, .mtb .mtbTitulo__ex, .bmx .bmxTitulo__cu, .bmx .bmxTitulo__fl {
+    font-size: 1.6em; }
   .nosotros__parrafo {
     font-size: 0.8em; }
-  .centrarTexto {
-    font-size: 0.8em; }
+  .centrarTexto, .bmx .bmxParrafo__cu {
+    font-size: 1.1em; }
   .contactos {
     margin: 1rem; }
   .sociales {
@@ -354,5 +332,3 @@ html {
       width: 6rem; }
     .sociales__icono img {
       width: 2rem; } }
-    
-    

@@ -16,7 +16,8 @@
     grid-area: bic;    
     }
     .bmxParrafo__cu{
-    grid-area: bpc;    
+    grid-area: bpc; 
+    @extend .centrarTexto;   
     }
     .bmxTitulo__fl{
     grid-area: btf;

@@ -16,7 +16,7 @@
         font-size: 1.6em;
         }        
     .centrarTexto{
-        font-size: 3em;
+        font-size: 1.5em;
     }   
 }
 @media only screen and (max-width: 900px) {
@@ -36,7 +36,7 @@
         font-size: 1.2em;
     }
     .centrarTexto{
-        font-size: 1.2em;
+        font-size: 1.3em;
     }         
     .sociales__imagen a img{
         width: 8rem;       
@@ -68,47 +68,52 @@
         margin: 2rem; 
                                 
     }  
-    .tituloGeneral{
-        font-size: 1.6em;        
-    }
+    
     .nosotros__parrafo{
         font-size: 1em;
     }
-    .centrarTexto{
-        font-size: 1em;
-    }
+    
     .ruta{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr 2fr 2fr;
         grid-template-areas: "rtp"
                              "rip" 
                              "rpp"
                              "rte"
                              "rie"
                              "rpe";
+    .imgResponsive{
+        width: 80%;
+    } 
     }
     .mtb{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr 2fr 2fr;
         grid-template-areas: "mtx"
                              "mix"
                              "mpx"
                              "mte"
                              "mie"
                              "mpe";
+    .imgResponsive{
+        width: 80%;
+    }                          
     }
     .bmx{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 5fr 5fr 1fr 5fr 5fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr 2fr 2fr;
         grid-template-areas: "btc"
                              "bic"
                              "bpc"
                              "btf"
                              "bif" 
                              "bpf";
+    .imgResponsive{
+        width: 80%;
+    }                         
     }
     .contactos{
         display: grid;
@@ -145,14 +150,14 @@
         }            
     }
     .tituloGeneral{
-        font-size: 1.4em;
+        font-size: 1.6em;
     }   
     
     .nosotros__parrafo{
         font-size: 0.8em;
         }       
     .centrarTexto{
-        font-size: 0.8em;
+        font-size: 1.1em;
     } 
     .contactos{
         margin: 1rem;
