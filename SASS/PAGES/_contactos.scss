@@ -8,7 +8,7 @@
                          "z cb cb k"                      
                          ;
     grid-gap: 1rem; 
-    @include nor_grid(center, center, 2rem); 
+    @include nor_grid(center, center, 10rem 0); 
     
     &__nombre{
     grid-area: cn;
@@ -33,7 +33,8 @@
     font-weight:bold;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: darkgray;    
+    background-color: darkgray; 
+     
     }
 }
 

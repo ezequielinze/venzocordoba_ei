@@ -38,14 +38,21 @@ html {
   font-size: 2em;
   font-weight: bold;
   text-align: center;
-  margin: 2rem; }
+  margin: 2rem 0; }
 
 .centrarTexto, .bmx .bmxParrafo__cu {
   text-align: center;
   font-size: 2em; }
 
+/*bootstrap*/
 h1 {
   font-family: Arial, Helvetica, sans-serif; }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: black; }
+
+h3 {
+  font-size: 1.3em; }
 
 /*mixin*/
 /* HEADER */
@@ -60,7 +67,8 @@ h1 {
     margin: 2rem 1rem;
     width: 60rem; }
   .menu__nav {
-    margin: 1rem; }
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif; }
   .menu__li {
     /*botones en fila*/
     display: flex;
@@ -86,6 +94,10 @@ h1 {
   width: 12rem;
   background-color: #c2bfbf;
   font-weight: bold; }
+
+.boton__enviar:hover {
+  width: 8rem;
+  background-color: #c2bfbf; }
 
 .sociales {
   display: flex;
@@ -116,6 +128,14 @@ h1 {
     grid-area: v4; }
   .video .subvideo__venzo3 {
     grid-area: v5; }
+
+/*normalizar bootstrap*/
+.norBody {
+  line-height: 1em; }
+
+ul {
+  margin-bottom: 0rem;
+  padding-left: 0rem; }
 
 .nosotros {
   margin: 2rem;
@@ -209,7 +229,7 @@ h1 {
   grid-gap: 1rem;
   justify-items: center;
   align-items: center;
-  margin: 2rem; }
+  margin: 10rem 0; }
   .contactos__nombre {
     grid-area: cn; }
   .contactos__apellido {
@@ -274,8 +294,12 @@ h1 {
     grid-template-areas: "v1"  "v2"  "ti" "v3" "v4" "v5";
     grid-gap: 1rem;
     margin: 2rem; }
-  .nosotros__parrafo {
-    font-size: 1em; }
+  .norBody {
+    line-height: 0.6em; }
+  .nosotros {
+    grid-template-rows: 1fr 2fr; }
+    .nosotros__parrafo {
+      font-size: 1em; }
   .ruta {
     display: grid;
     grid-template-columns: 1fr;
@@ -301,10 +325,14 @@ h1 {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 2fr 2fr 2fr 2fr 5fr 2fr;
-    grid-template-areas: "cn" "ca" "cl" "ce"                                                              "cc"  "cb"; }
-  .sociales__imagen a img {
-    width: 7rem; }
-    .sociales__imagen a img__icono img {
+    grid-template-areas: "cn" "ca" "cl" "ce"                                                              "cc"  "cb";
+    margin: 2rem; }
+  .sociales {
+    justify-content: center;
+    gap: 15rem; }
+    .sociales__imagen a img {
+      width: 7rem; }
+    .sociales__icono img {
       width: 2.5rem; } }
 
 @media only screen and (max-width: 420px) {
@@ -327,8 +355,10 @@ h1 {
   .contactos {
     margin: 1rem; }
   .sociales {
+    gap: 10rem;
     margin: 1rem; }
     .sociales__imagen a img {
       width: 6rem; }
     .sociales__icono img {
-      width: 2rem; } }
+      width: 2rem;
+      margin: 0rem; } }

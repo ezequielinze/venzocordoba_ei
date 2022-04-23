@@ -68,9 +68,14 @@
         margin: 2rem; 
                                 
     }  
-    
-    .nosotros__parrafo{
+    .norBody{
+        line-height:0.6em;
+    }
+    .nosotros{
+        grid-template-rows: 1fr 2fr;
+        &__parrafo{
         font-size: 1em;
+        }
     }
     
     .ruta{
@@ -125,14 +130,21 @@
                              "ce"                                                             
                              "cc" 
                              "cb";                  
-                             
+        margin: 2rem;                     
     }
-    .sociales__imagen a img{
-        width: 7rem;
+    .sociales{
+        
+        justify-content: center;
+            gap: 15rem;
+        &__imagen a img{
+            width: 7rem;
+        }
         &__icono img{
             width: 2.5rem;
-        }          
+        }
     }
+              
+    
     
 }
 @media only screen and (max-width: 420px) {
@@ -163,12 +175,14 @@
         margin: 1rem;
     }   
     .sociales{
+        gap: 10rem;
         margin: 1rem;
         &__imagen a img{
         width: 6rem; 
         } 
         &__icono img{
         width: 2rem;
+        margin: 0rem;
         }    
     }   
 }
